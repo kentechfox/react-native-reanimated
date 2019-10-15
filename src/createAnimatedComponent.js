@@ -31,7 +31,7 @@ export default function createAnimatedComponent(Component) {
       this._attachProps(this.props);
     }
 
-    componentWillUnmount() {
+    UNSAFE_componentWillMount() {
       this._detachPropUpdater();
       this._propsAnimated && this._propsAnimated.__detach();
       this._detachNativeEvents();

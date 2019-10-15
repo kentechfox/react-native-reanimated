@@ -37,7 +37,7 @@ class Code extends React.Component {
     this.always.__attach();
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillMount() {
     this.always.__detach();
   }
 
